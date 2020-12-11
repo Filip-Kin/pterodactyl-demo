@@ -1,4 +1,4 @@
-import * as colors from 'colors';
+const colors = require('colors');
 import { exit } from 'process';
 
 console.log('Hello, world!'.red.bold);
