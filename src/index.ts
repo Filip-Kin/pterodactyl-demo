@@ -1,5 +1,5 @@
 const colors = require('colors');
-import { exit } from 'process';
+const process = require('process');
 
 console.log('Hello, world!'.red.bold);
 console.log('This is the example app for the pterodactyl panel');
