@@ -13,7 +13,7 @@ let messages = [
 const out = (i: number) => {
     if (!(i < messages.length)) return;
     console.log(messages[i]);
-    setTimeout(() => out(i++), 500);
+    setTimeout(() => out(i+1), 500);
 };
 
 out(0);
