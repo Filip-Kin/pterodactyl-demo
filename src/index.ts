@@ -16,5 +16,7 @@ const out = (i: number) => {
     setTimeout(() => out(i++), 500);
 };
 
+out(0);
+
 // don't exit for atleast 5 minutes to avoid auto restarting
 setTimeout(() => {}, 60e3*5);
