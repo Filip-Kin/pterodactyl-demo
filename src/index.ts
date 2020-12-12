@@ -1,5 +1,4 @@
 const colors = require('colors/safe');
-const process = require('process');
 
 let messages = [
     colors.green.bold('Hello, world!'),
@@ -11,7 +10,7 @@ let messages = [
     'This demo application will continue running until the scheduled exit task runs (every 5 minutes)'
 ];
 
-const out = (i) => {
+const out = (i: number) => {
     if (!(i < messages.length)) return;
     console.log(messages[i]);
     setTimeout(() => out(i++), 500);
