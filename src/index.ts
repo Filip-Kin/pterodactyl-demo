@@ -11,7 +11,7 @@ let messages = [
     'This demo application will continue running until the scheduled exit task runs (every 5 minutes)'
 ];
 
-const out(i) => {
+const out = (i) => {
     if (!(i < messages.length)) return;
     console.log(messages[i]);
     setTimeout(() => out(i++), 500);
